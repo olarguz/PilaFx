@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="376.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.uao.cg.gui.FXMLDocumentController">
+    <children>
+        <MenuBar layoutY="2.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="bAgregar" mnemonicParsing="false" onAction="#handleButtonAgregar" text="Agregar" />
+                        <MenuItem fx:id="bRetirar" mnemonicParsing="false" onAction="#handleButtonRetirar" text="Retirar" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="bSalir" mnemonicParsing="false" onAction="#handleButtonSalir" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <WebView fx:id="web" layoutY="27.0" prefHeight="352.0" prefWidth="330.0" />
+    </children>
+</AnchorPane>
